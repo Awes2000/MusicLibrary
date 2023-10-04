@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    background-color: grey;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width: 100vw;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10rem);
+
+
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 160%;
+    flex-direction: column;
+    gap: 2rem;
+    color: #eee;
+
+}
+
+.items:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    color: lightblue
+}
+
+.muziek {
+    width: calc(33.33% - 2rem);
+    /* Adjusted to rem units */
+    margin: 1rem;
+    background: #eee;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    height: 50vh;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/images/musicplayer.jpg');
+    /* Add the correct path to your image */
+    background-size: cover;
+    opacity: 0.5;
+    /* Adjust opacity as needed */
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: -1;
+}
